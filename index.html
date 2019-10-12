@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>new styles</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i|Roboto+Mono:700,700i|Roboto:600,500&display=swap" rel="stylesheet">
+  <link href="index.css" rel="stylesheet" type="text/css" media="all">
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+</head>
+
+<body id="body">
+  <header>
+    <h1>
+      <span class="delay">delay</span><span>f</span><span>i</span><span>c</span><span>t</span><span>i</span><span>o</span><span>n</span><small>craft en route</small>
+      <nav></nav>
+    </h1>
+
+    <h2>
+      <span>a</span><span>u</span><span>g</span><span>:</span><span>1</span><span>9</span>
+    </h2>
+  </header>
+
+  <main>
+  <article>
+    <header>
+      <div class="tag">short fiction</div>
+      <h3>Stella's Radio</h3>
+      <div class="author">Michael Mark</div>
+    </header>
+    <p><strong>The day I broke up with Bertie I spent the morning in my closet conducting experiments in ritualized catharsis.</strong> I sorted anklets and knee-high woolen stripes into stacks of tactile denominations, then slipped rubber bands over them as if readying to pack them in a duffel bag and schlep them to the drop. These would be payment for Angie’s life. It wasn’t the actual material that mattered; it was the intent. The configuration of objects and forces I created, and their suitability as vessels for the magnetism of my wounded heart. My sister was halfway across the world and possibly dying, and my means of intervention were limited. What I needed was pure transformation, and I was trying to concoct it from the contents of my closet.</p>
+    <p>After overhauling my sock tote, I built a mobile out of packing twine, a hanger, and my favorite pairs of shoes. It took childlike concentration to pry a hole through the thick, full grain uppers of my clogs, to pierce the gum rubber pads of my Keds. The blade of Bertie’s pocket knife and a sewing needle I found in my nightstand were my tools, and the whole time I worked I felt this inkling of glory, but when I hung the mobile in the window, nothing happened. It dangled there like something dead—lopsided and bent.</p>
+    <p>What needed to change was me, I realized.</p>
+    <p>When I finally emerged from the bedroom, Bertie was reclined on the couch with one arm crooked behind his head, scrolling through his news feeds. Save for the rising and falling of his chest and the periodic swipe of his thumb across the screen, he may as well have been hibernating. I leaned against the doorframe to steady myself, then told him I was going out.</p>
+  </article>
+  </main>
+
+  <nav class="pagination">
+    <div>
+      <a href="#">previous</a>
+      <a href="#">next</a>
+    </div> </nav>
+
+  <footer>
+      copyright delay fiction
+  </footer>
+</body>
+
+<script>
+var was = window.scrollY;
+var body = document.getElementById('body');
+
+if (was > 90) { body.className = 'scrolled'; };
+
+window.addEventListener('scroll', function(e) {
+  var is = window.scrollY;
+  if (is > 90 && was <= 90) {
+    body.className = 'scrolled';
+  } else if (was > 90 && is <= 90) {
+    body.className = '';
+  };
+
+  was = window.scrollY;
+});
+
+</script>
+</html>
