@@ -1,25 +1,3 @@
-@mixin timetable($width: 1px, $height: 1px, $font-size: 1px) {
-  display: flex;
-  align-items: center;
-  color: white;
-  background-color: rgba(0,0,0,0.4);
-
-  span {
-    margin-right: 3px;
-    display: inline-block;
-    width: $width;
-    height: $height;
-    line-height: $height;
-    font-size: $font-size;
-
-    background-color: black;
-
-    @include roboto-mono;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-  }
-}
 
 @mixin main-nav {
   background-image: url(https://delayfiction.org/assets/2018-08.png);
@@ -29,7 +7,7 @@
   position: relative;
 
   h1 {
-    @include timetable($font-size: 22px, $width: 18px, $height: 28px);
+    @include display-1;
 
     position: fixed;
     padding: 0 12px;
@@ -65,7 +43,7 @@
   }
 
   h2 {
-    @include timetable($width: 14px, $height: 20px, $font-size: 16px);
+    @include display-2;
 
     margin: 0;
     width: 100%;

@@ -94,37 +94,35 @@ body > header {
 
 article {
   padding: 20px; }
-
-article header {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500; }
-
-article h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 6px 0; }
-
-article .author {
-  font-size: 16px;
-  margin: 0; }
-
-article .tag {
-  font-size: 12px;
-  line-height: 12px;
-  display: inline-block;
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 3px 6px; }
-
-article {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px; }
-
-article strong {
-  font-weight: 500; }
+  article h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 6px 0; }
+  article .author {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0; }
+  article .tag {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 3px 6px;
+    text-decoration: none; }
+  article p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 14px 0; }
+    article p strong {
+      font-weight: 500; }
 
 main {
   margin-bottom: 50px; }
@@ -150,6 +148,7 @@ nav.pagination div {
   padding: 0 20px; }
 
 .pagination a {
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   line-height: 12px;
   display: inline-block;
@@ -157,8 +156,7 @@ nav.pagination div {
   color: white;
   margin: 0;
   padding: 3px 6px;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif; }
+  text-decoration: none; }
 
 footer {
   width: 100%;

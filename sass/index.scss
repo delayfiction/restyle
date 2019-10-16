@@ -13,50 +13,26 @@ body {
 
 body > header {
   @include main-nav;
-
 }
-
-
 
 article {
   padding: 20px;
-}
 
-article header {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
+  h3 {
+    @include header-1;
+  }
 
-article h3 {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 6px 0;
-}
+  .author {
+     @include header-2;
+  }
 
-article .author {
-  font-size: 16px;
-  margin: 0;
-}
+  .tag {
+    @include tag;
+  }
 
-article .tag {
-  font-size: 12px;
-  line-height: 12px;
-  display: inline-block;
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 3px 6px;
-}
-
-article {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-article strong {
-  font-weight: 500;
+  p {
+    @include paragraph;
+  }
 }
 
 main { margin-bottom: 50px; }
@@ -84,15 +60,7 @@ nav.pagination div {
 }
 
 .pagination a {
-  font-size: 12px;
-  line-height: 12px;
-  display: inline-block;
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 3px 6px;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  @include tag;
 }
 
 footer {
