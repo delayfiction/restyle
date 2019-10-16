@@ -7,8 +7,8 @@
   <meta name="viewport" content= "width=device-width, initial-scale=1.0">
 </head>
 
-<body id="body">
-  <header>
+<body>
+  <header id="main-nav">
     <h1>
       <span class="delay">delay</span><span>f</span><span>i</span><span>c</span><span>t</span><span>i</span><span>o</span><span>n</span><small>craft en route</small>
       <nav></nav>
@@ -30,6 +30,10 @@
     <p>After overhauling my sock tote, I built a mobile out of packing twine, a hanger, and my favorite pairs of shoes. It took childlike concentration to pry a hole through the thick, full grain uppers of my clogs, to pierce the gum rubber pads of my Keds. The blade of Bertie’s pocket knife and a sewing needle I found in my nightstand were my tools, and the whole time I worked I felt this inkling of glory, but when I hung the mobile in the window, nothing happened. It dangled there like something dead—lopsided and bent.</p>
     <p>What needed to change was me, I realized.</p>
     <p>When I finally emerged from the bedroom, Bertie was reclined on the couch with one arm crooked behind his head, scrolling through his news feeds. Save for the rising and falling of his chest and the periodic swipe of his thumb across the screen, he may as well have been hibernating. I leaned against the doorframe to steady myself, then told him I was going out.</p>
+    <p>When I finally emerged from the bedroom, Bertie was reclined on the couch with one arm crooked behind his head, scrolling through his news feeds. Save for the rising and falling of his chest and the periodic swipe of his thumb across the screen, he may as well have been hibernating. I leaned against the doorframe to steady myself, then told him I was going out.</p>
+    <p>When I finally emerged from the bedroom, Bertie was reclined on the couch with one arm crooked behind his head, scrolling through his news feeds. Save for the rising and falling of his chest and the periodic swipe of his thumb across the screen, he may as well have been hibernating. I leaned against the doorframe to steady myself, then told him I was going out.</p>
+    <p>When I finally emerged from the bedroom, Bertie was reclined on the couch with one arm crooked behind his head, scrolling through his news feeds. Save for the rising and falling of his chest and the periodic swipe of his thumb across the screen, he may as well have been hibernating. I leaned against the doorframe to steady myself, then told him I was going out.</p>
+    <p>When I finally emerged from the bedroom, Bertie was reclined on the couch with one arm crooked behind his head, scrolling through his news feeds. Save for the rising and falling of his chest and the periodic swipe of his thumb across the screen, he may as well have been hibernating. I leaned against the doorframe to steady myself, then told him I was going out.</p>
   </article>
   </main>
 
@@ -46,16 +50,16 @@
 
 <script>
 var was = window.scrollY;
-var body = document.getElementById('body');
+var nav = document.getElementById('main-nav');
 
-if (was > 90) { body.className = 'scrolled'; };
+if (was > 90) { nav.className = 'scrolled'; };
 
 window.addEventListener('scroll', function(e) {
   var is = window.scrollY;
   if (is > 90 && was <= 90) {
-    body.className = 'scrolled';
+    nav.className = 'scrolled';
   } else if (was > 90 && is <= 90) {
-    body.className = '';
+    nav.className = '';
   };
 
   was = window.scrollY;
